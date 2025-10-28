@@ -16,7 +16,10 @@
     "@vue/test-utils": "2.4.6",
     "nuxt": "4.1.3",
     "typescript": "5.9.3",
-    "vitest": "3.2.4",
+    "vitest": "4.0.4",
     "vitest-browser-vue": "1.1.0"
+  },
+  "dependencies": {
+    "@vitest/browser-playwright": "^4.0.4"
   }
 }
