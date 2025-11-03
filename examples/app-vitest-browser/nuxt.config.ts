@@ -4,5 +4,12 @@ export default defineNuxtConfig({
   app: {
     rootId: 'nuxt-test',
   },
+  runtimeConfig: {
+    public: {
+      whatever: {
+        hello: 'world',
+      },
+    },
+  },
   compatibilityDate: '2024-04-03',
 })

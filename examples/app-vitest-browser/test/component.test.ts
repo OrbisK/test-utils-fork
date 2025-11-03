@@ -4,6 +4,8 @@ import { MyCounter } from '#components'
 
 describe('Component (MyCounter)', () => {
   it('renders', () => {
+    const config = useRuntimeConfig()
+    console.log('public', config.public)
     const { getByText } = render(MyCounter)
     expect(getByText('Count: 0')).toBeInTheDocument()
   })
