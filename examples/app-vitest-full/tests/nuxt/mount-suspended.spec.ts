@@ -42,7 +42,15 @@ const formats = {
   ExportDefaultReturnsRenderComponent,
 }
 
+mockNuxtImport('useTrue', () => {
+  return () => true
+})
+
 describe('mountSuspended', () => {
+  it.only('can access page', async () => {
+    expect(mountSuspended(App, { route: '/foo' }))
+  })
+
   it('can mount components within nuxt suspense', async () => {
     const component = await mountSuspended(App)
     expect(component.html()).toMatchInlineSnapshot(`
